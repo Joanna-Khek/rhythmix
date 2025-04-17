@@ -48,6 +48,7 @@ https://github.com/user-attachments/assets/1e28bf9a-e8cb-4787-a473-8c6e19d9d296
 ### Frontend
 - React
 - Axios
+- Vite
 
 ### Dataset
 - Song dataset sourced from [Kaggle](https://www.kaggle.com/datasets/thedevastator/spotify-tracks-genre-dataset), indexed in a Qdrant vector database.
