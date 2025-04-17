@@ -1,5 +1,5 @@
 #root {
-  max-width: 1280px;
+  max-width: 1000px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
@@ -23,4 +23,35 @@
 .quantico-font {
   margin-bottom: 2rem;
   font-family: 'Quantico', sans-serif;
+}
+
+.FormBox {
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px auto; /* Horizontally centers the box */
+}
+
+.FormArea{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin: 20px auto; /* Horizontally centers the box */
+}
+
+.SliderBox {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.SliderBox .SliderBoxText .MuiButton-root {
+  justify-content: flex-start;  /* Align text to the left */
+  width: 150px;
+  text-align: left;
+  margin-right: 50px;
+  color: rgb(53, 53, 54)
 }
