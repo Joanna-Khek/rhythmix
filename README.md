@@ -76,25 +76,27 @@ Install the Python dependencies
 uv sync
 ```
 
-Run Django migrations
+Download the data
 ```bash
-uv run python manage.py migrate
+uv run backend/langgraph_integration/preprocessing/download_data.py
 ```
 
-Set up frontend
+Set up the vector database
+```bash
+uv run backend/langgraph_integration/preprocessing/create_vector_db.py
+```
+
+Set up frontend server
 ```bash
 cd frontend
 npm install
+npm run dev
 ```
 
-Run the backend server
+Set up backend server
 ```bash
 cd backend
+uv run python manage.py migrate
 uv run python manage.py runserver
 ```
 
-Run the frontend server
-```bash
-cd frontend
-npm run dev
-```
