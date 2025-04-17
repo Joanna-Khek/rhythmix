@@ -9,8 +9,7 @@ Rhythmix was initially developed as a song recommender using Streamlit. To explo
 - **Natural Language Input:** Describe your mood or feelings (e.g., "I’m feeling upbeat and nostalgic"), and the LLM predicts song attributes like tempo, energy, and mood.
 - **Song Recommendations:** Retrieves the top 5 songs from a vectorized song database based on predicted attributes.
 - **Attribute Customization:** Users can tweak predicted song attributes before generating recommendations for a personalized experience.
-- **Responsive UI:** Built with React for a seamless and interactive frontend experience.
-- **Scalable Backend:** Powered by Django with a RESTful API, integrated with LangGraph for LLM-driven attribute prediction.
+- **Save Your Songs:** Save your favorite song recommendations and view them in a separate tab, allowing you to revisit and listen to newly discovered songs at any time.
 
 ## Demo
 https://github.com/user-attachments/assets/1e28bf9a-e8cb-4787-a473-8c6e19d9d296
