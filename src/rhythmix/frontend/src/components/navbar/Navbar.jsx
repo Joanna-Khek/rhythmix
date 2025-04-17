@@ -192,9 +192,7 @@ export default function MiniDrawer({ open, setOpen }) {
         <List>
         {[
           { text: 'Home', icon: <HomeIcon />, link: '/' },
-          { text: 'Recommender', icon: <ChatIcon />, link: '/recommender'},
-          { text: 'Item 3', icon: <AudiotrackIcon /> },
-          { text: 'Item 4', icon: <MailIcon /> },
+          { text: 'Songs', icon: <AudiotrackIcon />, link: '/songs'},
           ].map(({ text, icon, link }, index) => (
             <ListItem key={text} disablePadding sx={{ display: 'block' }}>
               <ListItemButton
