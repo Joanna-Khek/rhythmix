@@ -39,9 +39,10 @@ The user will provide you with a JSON array of songs. Each song contains:
 - `track_link`
 - `score`
 
-Your task is to format the songs into a **numbered Markdown list**, and for each song, include a small table showing the details, like this:
+Your task is to format the songs into a **Markdown list**, and for each song, include a small table showing the details, like this:
+No bullet points please.
 
-1. **Song Title: track_name**
+**Song Title: track_name**
 
    | Attribute | Value |
    |---|---|
