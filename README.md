@@ -1,6 +1,7 @@
 # Rhythmix
 Rhythmix is a natural language song recommender web application built with a Django backend and a React frontend. It allows users to describe their mood or feelings in natural language, and an LLM predicts song attributes to recommend the top 5 most similar songs from a vectorized song database. Users can also modify predicted attributes to refine their recommendations.
 
+
 ## Motivation
 Rhythmix was initially developed as a song recommender using Streamlit. To explore modern frontend development, I rebuilt the application using React for a dynamic user interface and Django for a robust backend. This project showcases my learning journey with React while enhancing the song recommendation system with advanced natural language processing and vector search capabilities.
 
@@ -10,6 +11,10 @@ Rhythmix was initially developed as a song recommender using Streamlit. To explo
 - **Attribute Customization:** Users can tweak predicted song attributes before generating recommendations for a personalized experience.
 - **Responsive UI:** Built with React for a seamless and interactive frontend experience.
 - **Scalable Backend:** Powered by Django with a RESTful API, integrated with LangGraph for LLM-driven attribute prediction.
+
+## Demo
+https://github.com/user-attachments/assets/1e28bf9a-e8cb-4787-a473-8c6e19d9d296
+
 
 ## Project Structure
 ```
