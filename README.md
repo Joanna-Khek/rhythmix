@@ -7,7 +7,7 @@ Rhythmix was initially developed as a song recommender using Streamlit. To explo
 
 ## Features
 - **Natural Language Input:** Describe your mood or feelings (e.g., "I’m feeling upbeat and nostalgic"), and the LLM predicts song attributes like tempo, energy, and mood.
-- **Song Recommendations:** Retrieves the top 5 songs from a vectorized song database (sourced from Kaggle) based on predicted attributes.
+- **Song Recommendations:** Retrieves the top 5 songs from a vectorized song database based on predicted attributes.
 - **Attribute Customization:** Users can tweak predicted song attributes before generating recommendations for a personalized experience.
 - **Responsive UI:** Built with React for a seamless and interactive frontend experience.
 - **Scalable Backend:** Powered by Django with a RESTful API, integrated with LangGraph for LLM-driven attribute prediction.
@@ -50,7 +50,7 @@ https://github.com/user-attachments/assets/1e28bf9a-e8cb-4787-a473-8c6e19d9d296
 - Axios
 
 ### Dataset
-- Song dataset sourced from Kaggle, indexed in a Qdrant vector database.
+- Song dataset sourced from [Kaggle](https://www.kaggle.com/datasets/thedevastator/spotify-tracks-genre-dataset), indexed in a Qdrant vector database.
 
 ## Installation
 Follow these steps to set up Rhythmix locally.
