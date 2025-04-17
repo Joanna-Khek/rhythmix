@@ -1,10 +1,9 @@
 import {React, useEffect, useMemo, useState} from 'react'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'; // Ensure you're using BrowserRouter
-import AxiosInstance from './components/Axios';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import './App.css'
 import Home from './components/Home'
-import Recommender from './components/Recommender';
+import SongsSaved from './components/SongsSaved';
 
 function App() {
   const theme = createTheme({
@@ -16,25 +15,6 @@ function App() {
     const drawerCloseWidth = 72;
     const drawerOpenWidth = 240;
 
-    const [myData, setMyData] = useState([])
-    const [myPrompt, setPrompt] = useState([])
-
-    const GetData = () =>{
-        AxiosInstance.get(`api-check/`).then((res) =>{
-          setMyData(res.data)
-        } )
-
-        AxiosInstance.get(`initial-prediction/`).then((res) => {
-          setPrompt(res.data)
-        } )
-    }
-
-    useEffect(() =>{
-        GetData()
-    },[])
-
-    console.log(myPrompt)
-
   return (
       <Router> {/* Wrap the entire app with Router to enable routing */}
       <ThemeProvider theme={theme}>
@@ -45,17 +25,16 @@ function App() {
               <Home
                 drawerCloseWidth={drawerCloseWidth}
                 drawerOpenWidth={drawerOpenWidth}
-                data={myData}/>
+              />
             }
           />
           <Route
-            path="/recommender"
+            path="/songs"
             element={
-              <Recommender
+              <SongsSaved
                 drawerCloseWidth={drawerCloseWidth}
                 drawerOpenWidth={drawerOpenWidth}
-                data={myPrompt}/>
-            }
+                />}
           />
         </Routes>
       </ThemeProvider>
